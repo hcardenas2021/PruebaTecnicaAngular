@@ -1,0 +1,12 @@
+<div class="container">
+	<h2>{{title}}</h2>
+	<form #postForm="ngForm" (ngSubmit)="onSubmit()">
+
+		<p>
+			<label for="titulo">Titulo</label>
+			<input type="text" name="titulo" #titulo="ngModel" [(ngModel)]="post.titulo" />
+		</p>
+	</form>
+	
+
+</div>

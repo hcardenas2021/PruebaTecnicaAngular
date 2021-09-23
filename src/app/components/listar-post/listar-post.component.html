@@ -1,0 +1,19 @@
+<div class="container">
+	<h2>Mis Post</h2>
+	<ul>
+		<li *ngFor="let post of posts" class="project">
+		<div class="image">
+					<img  src="{{url+'mostrar-imagen/'+post.image}}" *ngIf="post.image" />
+		</div>
+		<h3>{{post.titulo}}</h3>
+		<h4>{{post.autor}}</h4>
+		<p>{{post.email}}</p>
+		<p>{{post.descripcion}}</p>
+
+
+	</li>
+	</ul>
+	
+	
+
+</div>
